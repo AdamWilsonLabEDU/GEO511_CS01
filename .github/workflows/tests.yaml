@@ -6,8 +6,6 @@ on:
   pull_request:
     branches:
       - master
-
-name: classroom-tests
 jobs:
   build:
     runs-on: ubuntu-18.04

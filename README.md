@@ -1,4 +1,4 @@
-Your first script
+Case Study 1
 ================
 
 # Background Reading
@@ -282,7 +282,8 @@ hardrive (if you are curious, check out the examples in `?png`)
 # Tasks
 
   - Open the `CS01.R` file in this assignment
-      - In your new script, load the iris dataset with `data(iris)`
+      - In your new script, create a new object called `iris` by reading
+        in the sample dataset with `read_csv("iris.csv")`
       - Read the help file for the function that calculates the mean
         (you can run `?mean` or use the GUI).
       - Calculate the mean of the `Petal.Length` field and save it as an

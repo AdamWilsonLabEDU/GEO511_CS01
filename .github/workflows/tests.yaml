@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-18.04
     container: rocker/verse:latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@master
       - name: Install dependencies
         run: |
           install.packages(c("testthat","tidyverse"))

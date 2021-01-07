@@ -1,5 +1,5 @@
 ---
-title: Your first script
+title: Case Study 1
 week: 1 
 subtitle: Write a script that reads in data, calculates a statistic, and makes a plot.
 output:  github_document
@@ -9,6 +9,7 @@ output:  github_document
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
 library(kableExtra)
+library(tidyverse)
 ```
 
 # Background Reading
@@ -24,6 +25,7 @@ The dataset looks like this:
 
 ```{r, echo=F}
 data(iris)
+write_csv(iris, "iris.csv")
 kable(head(iris))
 ```
 
@@ -36,7 +38,7 @@ When you complete this task, you will have done some 'reproducible research' res
 # Tasks
 
   - Open the `CS01.R` file in this assignment
-  - In your new script, load the iris dataset with `data(iris)`
+  - In your new script, create a new object called `iris` by reading in the sample dataset with `read_csv("iris.csv")` 
   - Read the help file for the function that calculates the mean (you can run `?mean` or use the GUI).
   - Calculate the mean of the `Petal.Length` field and save it as an object named `petal_length_mean`
   - Click 'source' in RStudio to run your script from beginning to end

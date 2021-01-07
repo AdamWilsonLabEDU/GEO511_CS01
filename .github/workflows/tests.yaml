@@ -12,7 +12,7 @@ jobs:
         run: |
           install.packages(c("testthat","tidyverse"))
           getwd()
-          list.files()
+          list.files("..")
       - name: Source Script
         run: source("CS01.R")
       - name: Run Testthat

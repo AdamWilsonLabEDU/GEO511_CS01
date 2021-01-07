@@ -2,10 +2,6 @@
 title: Your first script
 week: 1 
 subtitle: Write a script that reads in data, calculates a statistic, and makes a plot.
-type: Case Study
-reading:
-  - Datacamp's [_How to Make a Histogram with Basic R_](https://www.datacamp.com/community/tutorials/make-histogram-basic-r)
-  - Datacamp's [_How to Make a Histogram with ggplot_](https://www.datacamp.com/community/tutorials/make-histogram-ggplot2)
 output:  github_document
 ---
 
@@ -15,14 +11,20 @@ library(knitr)
 library(kableExtra)
 ```
 
-# Background
+# Background Reading
+
+  - Datacamp's [_How to Make a Histogram with Basic R_](https://www.datacamp.com/community/tutorials/make-histogram-basic-r)
+  - Datacamp's [_How to Make a Histogram with ggplot_](https://www.datacamp.com/community/tutorials/make-histogram-ggplot2)
+
+# Introduction
+
 You are working on a new project and your colleague has asked you to calculate the mean Petal Length in the dataset she collected in the field.  
 
-It looks like this:
+The dataset looks like this:
 
 ```{r, echo=F}
 data(iris)
-head(iris)
+kable(head(iris))
 ```
 
 To work with only one column in the `iris` dataset, try typing `iris$Sepal.Length`.  What does the `$` do?  
@@ -33,7 +35,9 @@ When you complete this task, you will have done some 'reproducible research' res
 
 # Tasks
 
+  - Open the `CS01.R` file in this assignment
   - In your new script, load the iris dataset with `data(iris)`
   - Read the help file for the function that calculates the mean (you can run `?mean` or use the GUI).
   - Calculate the mean of the `Petal.Length` field and save it as an object named `petal_length_mean`
   - Click 'source' in RStudio to run your script from beginning to end
+  - run `test_dir("tests")` to see if your script passes all tests for this assignment

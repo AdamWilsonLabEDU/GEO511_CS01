@@ -2,7 +2,7 @@ name: Run Tests
 'on':  push
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    container: rocker/verse:latest
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@master
@@ -13,5 +13,4 @@ jobs:
       - name: Run Testthat
         run: source("tests/testthat.R")
         shell: Rscript {0}
-    container: rocker/verse:latest
       

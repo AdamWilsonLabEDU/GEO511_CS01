@@ -1,7 +1,7 @@
 library(testthat)
 
 # set wd because default is dir with tests...
-setwd("../")
+#setwd("../")
 
 # Case study script
 context("File Exists")

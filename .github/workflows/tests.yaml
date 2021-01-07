@@ -10,6 +10,7 @@ jobs:
           install.packages(c("testthat","tidyverse"))
         shell: Rscript {0}
       - name: Run Testthat
+        run: source("CS01.R")
         run: source("tests/testthat.R")
         shell: Rscript {0}
       

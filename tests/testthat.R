@@ -1,7 +1,7 @@
 library(testthat)
 
 # set wd because default is dir with tests...
-setwd("../../")
+setwd("../")
 
 # Case study script
 context("Case Study 01 - File Exists")
@@ -12,7 +12,11 @@ test_that(paste0(f_cs01, " file exists"),{
 })
 
 context("Case Study 01 - File runs")
-rmarkdown::render(f_cs01)
+
+test_that("Confirm page renders successfully",{
+  rmarkdown::render(f_cs01,clean = T)
+  expect_true(file.exists("CS_01.md"))
+})
 
 context("Case Study 01 - Results")
 

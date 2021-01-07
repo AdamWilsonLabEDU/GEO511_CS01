@@ -1,0 +1,21 @@
+name: GitHub Classroom Workflow
+on: [push]
+jobs:
+  build:    
+    name: Autograding
+    runs-on: ubuntu-18.04
+    container: rocker/verse:latest
+    defaults:
+      run:
+        shell: Rscript {0}
+    steps:
+      - uses: education/autograding@v1
+      - name: Checkout Repository
+        uses: actions/checkout@master
+      - name: Install dependencies
+        run: |
+          install.packages(c("testthat","tidyverse"))
+      - name: Source Script
+        run: source("CS01.R")
+      - name: Run Testthat
+        run: source("tests/testthat.R")

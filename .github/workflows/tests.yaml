@@ -1,16 +1,8 @@
 name: Run Tests
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+'on':  push
 jobs:
   build:
     runs-on: ubuntu-18.04
-    env:
-      GITHUB_PAT: ${{secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@master

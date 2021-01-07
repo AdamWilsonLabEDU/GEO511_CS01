@@ -12,7 +12,7 @@ name: classroom-tests
 
 jobs:
   Case_Study_Tests:
-    runs-on: macOS-latest
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@master

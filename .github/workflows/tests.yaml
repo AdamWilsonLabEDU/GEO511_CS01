@@ -4,15 +4,16 @@ jobs:
   build:    
     runs-on: ubuntu-18.04
     container: rocker/verse:latest
+    defaults:
+      run:
+        shell: Rscript {0}
     steps:
       - name: Install dependencies
         run: |
           install.packages(c("testthat","tidyverse"))
-        shell: Rscript {0}
+          getwd()
+          list.files()
       - name: Source Script
         run: source("CS01.R")
-        shell: Rscript {0}
       - name: Run Testthat
         run: source("tests/testthat.R")
-        shell: Rscript {0}
-      

@@ -3,7 +3,7 @@
     {
       "name": "Call tests from bash",
       "setup": "",
-      "run": "tests/test.sh",
+      "run": "sudo tests/test.sh",
       "input": "",
       "output": "",
       "comparison": "included",

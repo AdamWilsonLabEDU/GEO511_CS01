@@ -9,9 +9,9 @@ jobs:
       run:
         shell: Rscript {0}
     steps:
-      - uses: education/autograding@v1
       - name: Checkout Repository
         uses: actions/checkout@master
+      - uses: education/autograding@v1
       - name: Install dependencies
         run: |
           install.packages(c("testthat","tidyverse"))

@@ -19,5 +19,3 @@ test_that("petal_length_mean",{
   expect_true(exists("petal_length_mean"))
   expect_equal(petal_length_mean, 3.758)
 })
-
-

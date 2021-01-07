@@ -17,7 +17,7 @@ jobs:
           install.packages(c("testthat","tidyverse"))
         shell: Rscript {0}
       - name: Run Tests via bash
-        run: test.sh
+        run: tests/test.sh
         shell: bash
       - name: Run Testthat
         run: source("tests/testthat.R")

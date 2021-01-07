@@ -9,8 +9,10 @@ jobs:
         run: |
           install.packages(c("testthat","tidyverse"))
         shell: Rscript {0}
-      - name: Run Testthat
+      - name: Source Script
         run: source("CS01.R")
+        shell: Rscript {0}
+      - name: Run Testthat
         run: source("tests/testthat.R")
         shell: Rscript {0}
       

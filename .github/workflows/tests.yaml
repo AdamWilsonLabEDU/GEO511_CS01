@@ -23,4 +23,5 @@ jobs:
       - name: Run Testthat
         run: source("tests/testthat.R")
         shell: Rscript {0}
+    container: rocker/verse:latest
       

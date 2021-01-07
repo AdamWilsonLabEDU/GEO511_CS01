@@ -1,7 +1,8 @@
 library(testthat)
 
-# set wd because default is dir with tests...
-#setwd("../")
+# Could potentially break the testthat.R into separate tests and assign different points for each test. 
+# See the .github/classroom/autograding.json file for details.
+# Need to move this to another repository for easier updating
 
 # Case study script
 context("File Exists")

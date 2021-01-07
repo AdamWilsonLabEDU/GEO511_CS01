@@ -1,7 +1,8 @@
 name: Run Tests
 'on':  push
 jobs:
-  build:
+  build:    
+    runs-on: ubuntu-18.04
     container: rocker/verse:latest
     steps:
       - uses: actions/checkout@v2

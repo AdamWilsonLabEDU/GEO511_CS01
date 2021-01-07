@@ -8,7 +8,6 @@ on:
       - master
 
 name: classroom-tests
-
 jobs:
   Case_Study_Tests:
     runs-on: ubuntu-18.04

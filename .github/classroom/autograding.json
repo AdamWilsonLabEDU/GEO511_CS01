@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "Call tests from bash",
-      "setup": "",
-      "run": "sudo tests/test.sh",
+      "setup": "chmod a+x tests/test.sh",
+      "run": "tests/test.sh",
       "input": "",
       "output": "",
       "comparison": "included",

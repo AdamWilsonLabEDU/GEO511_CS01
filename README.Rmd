@@ -36,5 +36,16 @@ When you complete this task, you will have done some 'reproducible research' res
   - In your new script, load the iris dataset with `data(iris)`
   - Read the help file for the function that calculates the mean (you can run `?mean` or use the GUI).
   - Calculate the mean of the `Petal.Length` field and save it as an object named `petal_length_mean`
+<<<<<<< HEAD:README.Rmd
   - Click 'source' in RStudio to run your script from beginning to end
 
+=======
+  - Click 'knit' in RStudio to run your script from beginning to end
+
+# Results
+```{r}
+# enter your code in this chunk
+petal_length_mean=mean(iris$Petal.Length)
+print(petal_length_mean)
+```
+>>>>>>> e82d067a36b3afaf8b6ff7368ed25d0cd391963b:CS_01.Rmd

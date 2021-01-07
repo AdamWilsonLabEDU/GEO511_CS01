@@ -15,7 +15,10 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages(c("testthat","tidyverse"))
-      - name: Source Script
-        run: source("CS01.R")
+        shell: Rscript {0}
+      - name: Run Tests via bash
+        run: test.sh
+        shell: bash
       - name: Run Testthat
         run: source("tests/testthat.R")
+        shell: Rscript {0}

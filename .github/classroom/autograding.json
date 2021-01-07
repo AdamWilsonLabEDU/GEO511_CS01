@@ -3,7 +3,7 @@
     {
       "name": "test1",
       "setup": "",
-      "run": "Rscript -e source('tests/testthat.R')",
+      "run": "",
       "input": "",
       "output": "",
       "comparison": "included",

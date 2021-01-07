@@ -22,7 +22,7 @@ It looks like this:
 
 ```{r, echo=F}
 data(iris)
-kable(iris)
+head(iris)
 ```
 
 To work with only one column in the `iris` dataset, try typing `iris$Sepal.Length`.  What does the `$` do?  
@@ -33,17 +33,8 @@ When you complete this task, you will have done some 'reproducible research' res
 
 # Tasks
 
-  - Create a new R script in RStudio (File->New File->R Script)
-  - Save this file somewhere you will find it later
   - In your new script, load the iris dataset with `data(iris)`
   - Read the help file for the function that calculates the mean (you can run `?mean` or use the GUI).
   - Calculate the mean of the `Petal.Length` field and save it as an object named `petal_length_mean`
-  - Plot the distribution of the `Petal.Length` column as a histogram (`?hist`)
-  - Save the script
-  - Click 'Source' in RStudio to run your script from beginning to end
+  - Click 'source' in RStudio to run your script from beginning to end
 
-# Results
-```{r}
-# enter your code in this chunk
-petal_length_mean=mean(iris$Petal.Length)
-```

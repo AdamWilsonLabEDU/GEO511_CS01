@@ -1,6 +1,6 @@
 
 # run all tests in the testhat folder
-test_dir("tests/testthat/",stop_on_failure = FALSE,reporter = "progress")
+#test_dir("tests/testthat/",stop_on_failure = FALSE,reporter = "progress")
 
 
 # Case study script

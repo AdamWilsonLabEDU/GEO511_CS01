@@ -1,6 +1,7 @@
 
 
 library(testthat)
+setwd("..")
 
 # Link to raw version of tests
 # This is done so the student repositories always pull the most recent version of the test

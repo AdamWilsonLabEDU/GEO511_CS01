@@ -4,4 +4,4 @@ petal_length_mean=mean(iris$Petal.Length)
 print(petal_length_mean)
 
 
-test_file("tests/testthat.R")
+testthat::test_file("tests/testthat.R")

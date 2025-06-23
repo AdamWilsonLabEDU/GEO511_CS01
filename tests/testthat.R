@@ -1,3 +1,4 @@
+library(testthat)
 # Case study script
 
 context("File Exists")

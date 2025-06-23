@@ -5,7 +5,6 @@ petal_length_mean=mean(iris$Petal.Length)
 
 
 if(F) {
-#test_results =  testthat::test_file("tests/testthat.R", reporter = "summary")
 test_results =  testthat::test_dir("tests",reporter = "summary")
 test_results
 write_csv(as_tibble(test_results), "tests/test_results.csv")

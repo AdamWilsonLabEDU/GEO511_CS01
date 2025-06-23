@@ -3,6 +3,7 @@ library(testthat)
 
 context("File Exists")
 file="CS01.R"
+print(list.files())
 setwd("..") 
 
 test_that(paste0("Your script file, (",file, ") exists"),{

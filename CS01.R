@@ -6,3 +6,4 @@ petal_length_mean=mean(iris$Petal.Length)
 
 if(F) 
   testthat::test_file("tests/testthat.R")
+  testthat::test_dir("tests")

@@ -1,13 +1,19 @@
+# Case study script
 
+context("File Exists")
+file="CS01.R"
+setwd("..") 
 
-library(testthat)
-setwd("..")
+test_that(paste0("Your script file, (",file, ") exists"),{
+  expect_true(file.exists(file))
+})
 
-# Link to raw version of tests
-# This is done so the student repositories always pull the most recent version of the test
-# Otherwise they would have to pull the updated version every time I make a change.
-url="http://raw.githubusercontent.com/AdamWilsonLabEDU/GEO511_CS01/main/tests/tests.R"
+context("File sources without error")
+  expect_no_error(source(file))
 
-# now run the updated version directly from the file
-source(url)
-#test_file(path = "tests/tests2.R")
+context("Results")
+test_that("petal_length_mean",{
+  expect_true(exists("petal_length_mean"))
+  expect_equal(petal_length_mean, 3.758)
+})
+

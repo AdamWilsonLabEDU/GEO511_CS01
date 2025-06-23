@@ -1,16 +1,17 @@
 library(testthat)
-# Case study script
+library(here)
 
-context("File Exists")
+# Case study script
 file="CS01.R"
 
+# Set working directory to project base
 setwd(here()) 
+
+context("File exists and sources without error")
 
 test_that(paste0("Your script file, (",file, ") exists"),{
   expect_true(file.exists(file))
 })
-
-context("File sources without error")
 
 test_that(paste0("Your script file, (",file, ") sources without errors"),{
   expect_no_error(source(file))

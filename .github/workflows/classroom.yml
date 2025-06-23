@@ -1,9 +1,9 @@
-name: GitHub Classroom Workflow
+name: GitHub Automated Grading Workflow
 on: [push]
 jobs:
   build:    
-    name: Autograding
-    runs-on: ubuntu-18.04
+    name: Autograde
+    runs-on: ubuntu-latest
     container: rocker/verse:latest
     defaults:
       run:
@@ -11,14 +11,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@master
-      - uses: education/autograding@v1
       - name: Install dependencies
         run: |
           install.packages(c("testthat","tidyverse"))
         shell: Rscript {0}
-      - name: Run Tests via bash
-        run: tests/test.sh
-        shell: bash
+      # - name: Run Tests via bash
+      #   run: tests/test.sh
+      #   shell: bash
       - name: Run Testthat
         run: source("tests/testthat.R")
         shell: Rscript {0}

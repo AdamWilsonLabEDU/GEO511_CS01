@@ -1,0 +1,5 @@
+file,context,test,nb,failed,skipped,error,warning,user,system,real,passed,result
+tests.R,File Exists,"Your script file, (CS01.R) exists",1,0,FALSE,FALSE,0,0.0030000000000001137,0.0020000000000024443,0.007000000000061846,1,
+tests.R,File sources without error,"Your script file, (CS01.R) sources without errors",1,0,FALSE,FALSE,0,0.02599999999999625,0.006000000000000227,0.0340000000001055,1,
+tests.R,Results,1 petal_length_mean exists,1,0,FALSE,FALSE,0,0.0040000000000048885,0.0019999999999988916,0.007000000000061846,1,
+tests.R,Results,1 Mean is calculated correctly,1,0,FALSE,FALSE,0,0.0030000000000001137,0.0010000000000012221,0.005000000000109139,1,

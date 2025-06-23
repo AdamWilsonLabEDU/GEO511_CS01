@@ -25,4 +25,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: test_results
-          path: output/test/code-coverage.html
+          path: tests/test_results.csv

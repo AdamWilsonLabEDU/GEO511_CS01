@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@master
       - name: Install dependencies
         run: |
-          install.packages(c("testthat","tidyverse"))
+          install.packages(c("testthat","tidyverse", "here"))
         shell: Rscript {0}
       # - name: Run Tests via bash
       #   run: tests/test.sh
